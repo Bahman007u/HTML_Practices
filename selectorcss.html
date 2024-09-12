@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
- <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background and Selectors Example</title>
+    <style>
+        /* CSS Background Properties */
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+        }
 
-<title>Document</title>
-<link rel="stylesheet" href="CSS/csspractice.css">
+        /* CSS Selector: Class selector */
+        .header {
+            background-image: url('header-bg.jpg'); /* Background image for header */
+            background-size: cover;
+            text-align: center;
+            color: white;
+            padding: 50px;
+        }
+
+        /* CSS Selector: ID selector */
+        #main-content {
+            background-color: #ffffff; /* White background */
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a shadow */
+        }
+
+        /* CSS Selector: Element selector */
+        h1 {
+            color: #333;
+        }
+
+        /* CSS Selector: Descendant selector */
+        div p {
+            color: #555;
+        }
+
+        /* CSS Selector: Hover selector */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
-<h1> These are the CSS Selectors </h1>
-<p> Bahman Rashidi</p>
-<p> Hey Guys </p> 
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Welcome to My Website</h1>
+        <p>Learn CSS Background and Selectors</p>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="main-content">
+        <h2>Main Content</h2>
+        <p>This is a sample text showing how to use CSS selectors and background properties.</p>
+        <p>Here's a link: <a href="#">Click me!</a></p>
+    </div>
+
 </body>
 </html>
-
- 
